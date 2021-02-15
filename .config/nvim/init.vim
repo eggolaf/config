@@ -14,16 +14,18 @@ if exists("syntax_on")
     syntax reset
 endif
 let colors_name = "comments"
-hi Normal ctermfg=White ctermbg=Black guifg=White guibg=Black
-hi Comment    cterm=NONE ctermfg=Green
-hi Constant   cterm=NONE ctermfg=White
-hi Identifier cterm=NONE ctermfg=White
-hi Function   cterm=NONE ctermfg=White
-hi Statement  cterm=NONE ctermfg=White
-hi PreProc    cterm=NONE ctermfg=White
-hi Type	      cterm=NONE ctermfg=White
-hi Special    cterm=NONE ctermfg=White
-hi Delimiter  cterm=NONE ctermfg=White
+hi Normal ctermfg=Black ctermbg=White guifg=Black guibg=White
+hi Comment    cterm=NONE ctermfg=DarkGreen
+hi Constant   cterm=NONE ctermfg=Black
+hi Identifier cterm=NONE ctermfg=Black
+hi Function   cterm=NONE ctermfg=Black
+hi Statement  cterm=NONE ctermfg=Black
+hi PreProc    cterm=NONE ctermfg=Black
+hi Type	      cterm=NONE ctermfg=Black
+hi Special    cterm=NONE ctermfg=Black
+hi Delimiter  cterm=NONE ctermfg=Black
+hi LineNr 	  cterm=None ctermfg=Black
+hi CursorLineNr cterm=None ctermfg=Black
 
 set nu
 set rnu
