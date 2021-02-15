@@ -1,0 +1,60 @@
+set preview true
+set hidden true
+set drawbox true
+
+cmd mkdir ${{
+    set -f
+    printf "Directory Name: "
+    read ans
+    mkdir $ans
+}}
+
+cmd mkfile ${{
+    set -f
+    printf "File Name: "
+    read ans
+    $EDITOR $ans
+}}
+
+cmd openterm ${{
+    $TERMINAL &
+}}
+
+cmd pythonrun ${{
+    set -f
+    printf "python3 %s\n" "$f"
+    python3 "$f"
+    read
+}}
+
+map m
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+map z
+
+map ee $$EDITOR "$f"
+map es $sudo $EDITOR "$f"
+map z $$VIEWER "$f"
+map L $$LATEX "$f"
+map P pythonrun
+
+map dd delete
+map x cut
+map y copy
+map <enter> open
+map <esc> quit
+map nf mkfile
+map md mkdir
+map ot openterm
+map r rename
+
+map cf $$EDITOR ~/.config/fish/config.fish
+map cv $$EDITOR ~/.config/nvim/init.vim
+map cl $$EDITOR ~/.config/lf/lfrc
+
+map gh cd  ~/
+map gst cd ~/programs/st/
