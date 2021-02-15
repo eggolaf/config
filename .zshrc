@@ -1,13 +1,14 @@
 export EDITOR="nvim"
 export VIEWER="zathura"
-export TERMINAL="alacritty"
+export TERMINAL="st"
 export LATEX="xelatex"
+export CC="gcc"
 
 unsetopt beep
 bindkey -e
 
 autoload -U colors && colors
-PS1="%B%{$reset_color%}[%n%]@%M%%]$%$%b "
+PS1="%B%{$reset_color%}[%n@%M]%/ $ "
 setopt autocd
 
 HISTSIZE=10000
