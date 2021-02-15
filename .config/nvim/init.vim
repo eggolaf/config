@@ -26,6 +26,8 @@ hi Special    cterm=NONE ctermfg=Black
 hi Delimiter  cterm=NONE ctermfg=Black
 hi LineNr 	  cterm=None ctermfg=Black
 hi CursorLineNr cterm=None ctermfg=Black
+hi NonText	  cterm=None ctermfg=Black
+hi Visual     ctermfg=White ctermbg=Black
 
 set nu
 set rnu
