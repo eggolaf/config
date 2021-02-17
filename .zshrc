@@ -1,4 +1,4 @@
-export EDITOR="nvim"
+export EDITOR="vim"
 export VIEWER="zathura"
 export TERMINAL="st"
 export LATEX="xelatex"
@@ -32,4 +32,3 @@ lfcd () {
 }
 bindkey -s '^o' 'lfcd\n'
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
