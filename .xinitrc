@@ -51,5 +51,6 @@ fi
 export XDG_SESSION_TYPE=x11
 export SHELL="zsh"
 
-exec startxfce4
-exec --no-startup-id picom
+setxkbmap -layout de
+exec dwm
+

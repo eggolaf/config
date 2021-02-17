@@ -1,7 +1,5 @@
 call plug#begin('~/.vim/plugged')
   Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-  Plug 'dracula/vim', { 'as': 'dracula' }
-  Plug 'morhetz/gruvbox'
 call plug#end()
 
 filetype plugin on
@@ -39,10 +37,12 @@ set ruler
 set lazyredraw
 set hidden
 set tabstop=4
-set shiftwidth=0
+set shiftwidth=4
 set smarttab
 set copyindent
 set scrolloff=3
+
+set encoding=utf-8
 
 let g:tex_flavor='latex'
 let g:livepreview_engine = 'xelatex'
