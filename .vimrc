@@ -13,35 +13,20 @@ if exists("syntax_on")
 endif
 let colors_name = "comments"
 
-"hi Normal ctermfg=Black ctermbg=White guifg=Black guibg=White
-"hi Comment    cterm=NONE ctermfg=DarkGreen
-"hi Constant   cterm=NONE ctermfg=Black
-"hi Identifier cterm=NONE ctermfg=Black
-"hi Function   cterm=NONE ctermfg=Black
-"hi Statement  cterm=NONE ctermfg=Black
-"hi PreProc    cterm=NONE ctermfg=Black
-"hi Type	      cterm=NONE ctermfg=Black
-"hi Special    cterm=NONE ctermfg=Black
-"hi Delimiter  cterm=NONE ctermfg=Black
-"hi LineNr 	  cterm=None ctermfg=Black
-"hi CursorLineNr cterm=None ctermfg=Black
+hi Normal ctermfg=LightGray ctermbg=Black
+hi Comment    cterm=NONE ctermfg=DarkBlue
+hi Constant   cterm=NONE ctermfg=LightGray
+hi Identifier cterm=NONE ctermfg=LightGray
+hi Function   cterm=NONE ctermfg=LightGray
+hi Statement  cterm=NONE ctermfg=DarkGreen
+hi PreProc    cterm=NONE ctermfg=LightGray
+hi Type	      cterm=NONE ctermfg=DarkGreen
+hi Special    cterm=NONE ctermfg=LightGray
+hi Delimiter  cterm=NONE ctermfg=DarkGray
+hi LineNr 	  cterm=None ctermfg=DarkYellow
+hi CursorLineNr cterm=None ctermfg=DarkYellow
 "hi NonText	  cterm=None ctermfg=Black
 "hi Visual     ctermfg=White ctermbg=Black
-
-hi Normal ctermfg=DarkBlue ctermbg=DarkRed guifg=DarkBlue guibg=DarkRed
-hi Comment    cterm=NONE ctermfg=Yellow
-hi Constant   cterm=NONE ctermfg=DarkBlue
-hi Identifier cterm=NONE ctermfg=DarkBlue
-hi Function   cterm=NONE ctermfg=DarkBlue
-hi Statement  cterm=NONE ctermfg=DarkBlue
-hi PreProc    cterm=NONE ctermfg=DarkBlue
-hi Type	      cterm=NONE ctermfg=DarkBlue
-hi Special    cterm=NONE ctermfg=DarkBlue
-hi Delimiter  cterm=NONE ctermfg=DarkBlue
-hi LineNr 	  cterm=None ctermfg=DarkBlue
-hi CursorLineNr cterm=None ctermfg=DarkBlue
-hi NonText	  cterm=None ctermfg=DarkBlue
-hi Visual     ctermfg=DarkRed ctermbg=DarkBlue
 
 set nu
 set rnu

@@ -51,6 +51,7 @@ fi
 export XDG_SESSION_TYPE=x11
 export SHELL="zsh"
 
-setxkbmap -layout de
-exec dwm
+#setxkbmap -layout de &
+#exec dwm
+exec startxfce4
 
