@@ -14,7 +14,7 @@ endif
 let colors_name = "comments"
 
 hi Normal ctermfg=LightGray ctermbg=Black
-hi Comment    cterm=NONE ctermfg=DarkBlue
+hi Comment    cterm=NONE ctermfg=DarkCyan
 hi Constant   cterm=NONE ctermfg=LightGray
 hi Identifier cterm=NONE ctermfg=LightGray
 hi Function   cterm=NONE ctermfg=LightGray
@@ -25,8 +25,14 @@ hi Special    cterm=NONE ctermfg=LightGray
 hi Delimiter  cterm=NONE ctermfg=DarkGray
 hi LineNr 	  cterm=None ctermfg=DarkYellow
 hi CursorLineNr cterm=None ctermfg=DarkYellow
-"hi NonText	  cterm=None ctermfg=Black
-"hi Visual     ctermfg=White ctermbg=Black
+hi NonText	  cterm=None ctermfg=DarkYellow
+"hi Visual     ctermfg=White ctermbg=Red
+
+" draw tabs and highlight them specially
+set list
+set listchars=tab:>-
+:hi Tabs cterm=None ctermfg=DarkBlue
+:match Tabs /\t/
 
 set nu
 set rnu
