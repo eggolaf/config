@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
   Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+  Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 filetype plugin on
@@ -11,24 +12,24 @@ highlight clear
 if exists("syntax_on")
     syntax reset
 endif
-let colors_name = "comments"
 
-hi Normal ctermfg=White ctermbg=Yellow
-hi Comment    cterm=NONE ctermfg=DarkCyan
-hi Constant   cterm=NONE ctermfg=White
-hi Identifier cterm=NONE ctermfg=White
-hi Function   cterm=NONE ctermfg=White
-hi Statement  cterm=NONE ctermfg=White
-hi PreProc    cterm=NONE ctermfg=White
-hi Type	      cterm=NONE ctermfg=White
-hi Special    cterm=NONE ctermfg=White
-hi Delimiter  cterm=NONE ctermfg=White
-hi LineNr 	  cterm=None ctermfg=DarkCyan
-hi CursorLineNr cterm=None ctermfg=DarkCyan
-hi NonText	  cterm=None ctermfg=White
-" hi Visual     ctermfg=None ctermbg=Yellow
+let colors_name = "eggolaf"
+hi Normal ctermfg=DarkRed ctermbg=Black
+hi Comment    cterm=NONE ctermfg=DarkGreen
+hi Constant   cterm=NONE ctermfg=DarkCyan
+hi Statement  cterm=NONE ctermfg=DarkMagenta
+hi PreProc    cterm=NONE ctermfg=DarkBlue
+hi Type	      cterm=NONE ctermfg=DarkBlue
+hi Special    cterm=NONE ctermfg=DarkCyan
+hi Delimiter  cterm=NONE ctermfg=DarkBlue
+hi LineNr 	  cterm=None ctermfg=DarkRed
+hi CursorLineNr cterm=None ctermfg=DarkRed
+hi NonText	  cterm=None ctermfg=Black
+hi Identifier cterm=NONE ctermfg=DarkYellow
+hi Function   cterm=NONE ctermfg=DarkMagenta
+"hi Visual     ctermfg=None ctermbg=Black
 
-:highlight ExtraWhitespace ctermbg=Yellow
+:highlight ExtraWhitespace ctermbg=Black
 :match ExtraWhitespace /\s\+$/
 
 " draw tabs and highlight them specially
@@ -60,3 +61,6 @@ let g:livepreview_previewer = 'zathura'
 let Tex_FoldedSections=""
 let Tex_FoldedEnvironments=""
 let Tex_FoldedMisc=""
+
+let g:cpp_class_decl_highlight = 1
+let g:cpp_class_scope_highlight = 1
