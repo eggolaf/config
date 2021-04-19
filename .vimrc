@@ -13,26 +13,29 @@ if exists("syntax_on")
 endif
 let colors_name = "comments"
 
-hi Normal ctermfg=LightGray ctermbg=Black
+hi Normal ctermfg=White ctermbg=Yellow
 hi Comment    cterm=NONE ctermfg=DarkCyan
-hi Constant   cterm=NONE ctermfg=LightGray
-hi Identifier cterm=NONE ctermfg=LightGray
-hi Function   cterm=NONE ctermfg=LightGray
-hi Statement  cterm=NONE ctermfg=DarkGreen
-hi PreProc    cterm=NONE ctermfg=LightGray
-hi Type	      cterm=NONE ctermfg=DarkGreen
-hi Special    cterm=NONE ctermfg=LightGray
-hi Delimiter  cterm=NONE ctermfg=DarkGray
-hi LineNr 	  cterm=None ctermfg=DarkYellow
-hi CursorLineNr cterm=None ctermfg=DarkYellow
-hi NonText	  cterm=None ctermfg=DarkYellow
-"hi Visual     ctermfg=White ctermbg=Red
+hi Constant   cterm=NONE ctermfg=White
+hi Identifier cterm=NONE ctermfg=White
+hi Function   cterm=NONE ctermfg=White
+hi Statement  cterm=NONE ctermfg=White
+hi PreProc    cterm=NONE ctermfg=White
+hi Type	      cterm=NONE ctermfg=White
+hi Special    cterm=NONE ctermfg=White
+hi Delimiter  cterm=NONE ctermfg=White
+hi LineNr 	  cterm=None ctermfg=DarkCyan
+hi CursorLineNr cterm=None ctermfg=DarkCyan
+hi NonText	  cterm=None ctermfg=White
+" hi Visual     ctermfg=None ctermbg=Yellow
+
+:highlight ExtraWhitespace ctermbg=Yellow
+:match ExtraWhitespace /\s\+$/
 
 " draw tabs and highlight them specially
-set list
-set listchars=tab:>-
-:hi Tabs cterm=None ctermfg=DarkBlue
-:match Tabs /\t/
+"set list
+"set listchars=tab:>-
+":hi Tabs cterm=None ctermfg=DarkBlue
+":match Tabs /\t/
 
 set nu
 set rnu
