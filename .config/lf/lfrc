@@ -52,8 +52,8 @@ map md mkdir
 map ot openterm
 map r rename
 
-map cf $$EDITOR ~/.config/fish/config.fish
-map cv $$EDITOR ~/.config/nvim/init.vim
+map cz $$EDITOR ~/.zshrc
+map cv $$EDITOR ~/.vimrc
 map cl $$EDITOR ~/.config/lf/lfrc
 
 map gh cd  ~/
